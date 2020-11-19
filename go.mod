@@ -1,6 +1,7 @@
 module github.com/emqx/kuiper
 
 require (
+	github.com/DataDog/go-python3 v0.0.0-20191126174558-6ed25e33b3c4
 	github.com/PaesslerAG/gval v1.0.0
 	github.com/PaesslerAG/jsonpath v0.1.1
 	github.com/benbjohnson/clock v1.0.0

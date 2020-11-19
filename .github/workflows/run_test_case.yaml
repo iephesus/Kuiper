@@ -36,6 +36,7 @@ jobs:
             go build --buildmode=plugin -o plugins/functions/Echo.so plugins/functions/echo/echo.go
             go build --buildmode=plugin -o plugins/functions/CountPlusOne@v1.0.0.so plugins/functions/countPlusOne/countPlusOne.go
             go build --buildmode=plugin -o plugins/functions/AccumulateWordCount@v1.0.0.so plugins/functions/accumulateWordCount/accumulateWordCount.go
+            go build --buildmode=plugin -o plugins/functions/PythonFunc.so plugins/functions/pythonFunc/PythonFunc.go
             go test --tags=edgex ./...
         - uses: actions/upload-artifact@v1
           if: failure()

@@ -79,6 +79,10 @@ type KuiperConf struct {
 		CacheTriggerCount int  `yaml:"cacheTriggerCount"`
 		DisableCache      bool `yaml:"disableCache""`
 	}
+	Python struct {
+		SysModulePath     string `yaml:"sysModulePath"`
+		CustomModulePath  string `yaml:"customModulePath"`
+	}
 }
 
 func init() {
